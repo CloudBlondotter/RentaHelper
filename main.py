@@ -273,7 +273,7 @@ def main():
     
         pdf_urls = []
         if choice == "1":
-            github_directory = "https://github.com/CloudBlondotter/BOE_RAG/tree/main/database"
+            github_directory = "https://github.com/CloudBlondotter/RentaHelper/tree/main/database"
             pdf_urls = load_urls_from_github_directory(github_directory)
         elif choice == "2":
             local_directory = input("Ingrese la ruta de la carpeta local que contiene los PDFs: ").strip()
@@ -293,9 +293,13 @@ def main():
         qa_system = DocumentQA(config)
 
     with gr.Blocks(theme=gr.themes.Soft()) as demo:
-        gr.Markdown("# Sistema RAG para el Manual Práctico de Renta\n"
-                    "Realiza tus consultas basadas en el contenido del manual utilizando un sistema de "
-                    "Recuperación de Información y Generación de Respuestas (RAG).")
+        gr.Markdown(
+            "# AEAT-IRPF-Assistant\n"
+            "Consulta el Manual Práctico de Renta con un sistema RAG que combina "
+            "recuperación de información y generación de respuestas para ofrecer "
+            "respuestas precisas y contextualizadas."
+        )
+
         with gr.Row():
             query_input = gr.Textbox(placeholder="Introduce tu consulta...", label="Consulta")
         with gr.Row():
