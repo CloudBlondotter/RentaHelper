@@ -30,7 +30,7 @@ class QAConfig:
     pdf_urls: List[str]
     persist_directory: str = "chroma_index"
     chunk_size: int = 500
-    chunk_overlap: int = 0
+    chunk_overlap: int = 50
     model_name: str = "llama3.2"
 
 class SuppressStdout:
