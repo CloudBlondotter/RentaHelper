@@ -24,7 +24,7 @@ Sigue estos pasos para instalar y configurar el proyecto:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/RentaHelper.git
+https://github.com/CloudBlondotter/RentaHelper.git
 cd RentaHelper
 ```
 
